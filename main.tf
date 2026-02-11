@@ -5,7 +5,14 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+  backend "s3" {
+    bucket = "my-devops-book-tfstate-12345" # Use the name of the bucket you created
+    key    = "staging/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
+
 
 provider "aws" {
   region = var.aws_region
