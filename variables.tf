@@ -8,4 +8,4 @@ variable "aws_region" {
 variable "random_suffix" {
   description = "A random suffix to ensure the bucket name is unique."
   type        = string
-}[
+}
