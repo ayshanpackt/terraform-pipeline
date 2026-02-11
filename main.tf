@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "staging_bucket" {
     ManagedBy   = "Terraform via GitHub Actions"
   }
 }
-	variables.tf
+	#variables.tf
 variable "aws_region" {
   description = "The AWS region for our resources."
   type        = string
