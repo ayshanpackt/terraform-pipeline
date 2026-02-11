@@ -34,4 +34,4 @@ jobs:
       run: terraform plan -var="random_suffix=${{ steps.random.outputs.suffix }}"
 
     - name: Terraform Apply
-      run: terraform apply -auto-approve -var="random_suffix=${{ steps.random.outputs.suffix }}"[
+      run: terraform apply -auto-approve -var="random_suffix=${{ steps.random.outputs.suffix }}"
